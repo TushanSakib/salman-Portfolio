@@ -1,39 +1,57 @@
-import React from "react"
-import Link from "next/link"
-import styles from "./Navigation.module.css"
-import { FaChartLine } from "react-icons/fa";
-import { FaProjectDiagram } from "react-icons/fa";
-import { GiSkills } from "react-icons/gi";
+
+"use client"
+import React, { useState } from "react";
+import Link from "next/link";
 import { MdHome } from "react-icons/md";
+import { FaChartLine, FaProjectDiagram } from "react-icons/fa";
+import { GiSkills, GiHamburgerMenu } from "react-icons/gi";
 import { TiMessages } from "react-icons/ti";
+import styles from "./Navigation.module.css";
 
-function Navigation(){
-    return(
-        <div>
-            {/* Navigation on the top of the page */}
-            <div className={styles.topNavigation}>
+function Navigation() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-                {/* Right side navigation */}
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
-                <div className={styles.leftNavigation}>
-                    <div className={styles.customLogo}>Salman <span>Azad</span></div>
+  const handleClick = ()=> setMenuOpen(false)
 
-                    <div className={styles.contact}><TiMessages/>contact@salmanazad.com</div>
-
-                </div>
-
-                {/* Left side navigation */}
-                <div className={styles.rightNavigation}>
-                    <div><Link href={"/"} className={styles.links}><MdHome/>Home</Link></div>
-                    <div><Link href={"/experience"} className={styles.links}><FaChartLine/>Experience</Link></div>
-                    <div><Link href={"/project"} className={styles.links}><FaProjectDiagram/>Projects</Link></div>
-                    <div><Link href={"/knowledge"} className={styles.links}><GiSkills/>Knowledge</Link></div>
-                </div>
-
-            </div>
-            
+  return (
+    <div className={styles.topNavigation}>
+      {/* Left Navigation */}
+      <div className={styles.leftNavigation}>
+        <div className={styles.customLogo}>
+          Salman <span>Azad</span>
         </div>
-    )
+        <div className={styles.contact}>
+          <TiMessages />
+          contact@salmanazad.com
+        </div>
+      </div>
+
+      {/* Hamburger Icon */}
+      <div className={styles.hamburger} onClick={toggleMenu}>
+        <GiHamburgerMenu />
+      </div>
+
+      {/* Right Navigation Links */}
+      <div
+        className={`${styles.rightNavigation} ${menuOpen ? styles.active : ""}`}
+      >
+        <Link href={"/"} className={styles.links} onClick={handleClick}>
+          <MdHome /> Home
+        </Link>
+        <Link href={"/experience"} className={styles.links} onClick={handleClick}>
+          <FaChartLine /> Experience
+        </Link>
+        <Link href={"/project"} className={styles.links} onClick={handleClick}>
+          <FaProjectDiagram /> Projects
+        </Link>
+        <Link href={"/knowledge"} className={styles.links} onClick={handleClick}>
+          <GiSkills /> Knowledge
+        </Link>
+      </div>
+    </div>
+  );
 }
 
 export default Navigation;

@@ -17,6 +17,7 @@
   z-index: 1000;
 }
 
+
 /* Left Navigation Items */
 .leftNavigation {
   display: flex;
@@ -115,46 +116,6 @@
   font-size: 1rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .topNavigation {
-    flex-direction: column;
-    height: auto;
-    gap: 8px;
-    padding: 10px 20px;
-  }
-
-  .leftNavigation,
-  .rightNavigation {
-    justify-content: center;
-    gap: 8px;
-  }
-
-  .links,
-  .contact {
-    font-size: 0.8rem;
-    padding: 4px 8px;
-  }
-}
-
-@media (max-width: 480px){
-  .topNavigation{
-    flex-direction: column;
-    gap: 6px;    
-  }
-  .leftNavigation,
-  .rightNavigation {
-    justify-content: center;
-    gap: 4px;
-    margin-left: 10px;
-  }
-
-  .links,
-  .contact {
-    font-size: 0.8rem;
-    padding: 4px 8px;
-  }
-}
 
 .customLogo {
   font-family: 'Montserrat', sans-serif;
@@ -180,4 +141,89 @@
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
   cursor: pointer;
 }
+
+
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: #f8fafc;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Responsive Mobile Layout */
+@media (max-width: 768px) {
+  .topNavigation {
+    flex-direction: column;
+    align-items: flex-start; /* stack items vertically */
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  /* Hamburger appears under left nav, right-aligned */
+  .hamburger {
+    display: block;
+    align-self: flex-end; /* push to right corner */
+    margin-top: 5px;
+  }
+
+  /* Right Navigation hidden by default */
+  .rightNavigation {
+    position: absolute;
+    top: calc(60px + 40px); /* below top nav + hamburger spacing */
+    right: 0;
+    width: 220px;
+    flex-direction: column;
+    background: rgba(15, 23, 42, 0.98);
+    border-radius: 0 8px 8px 0;
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .rightNavigation.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .links {
+    width: 100%;
+    padding: 10px;
+    justify-content: flex-start;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px){
+  .topNavigation{
+    flex-direction: column;
+    gap: 6px;    
+    position: relative; /* needed for hamburger positioning */
+  }
+
+  .leftNavigation {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 6px;
+    padding-left: 16px;
+  }
+
+  .rightNavigation {
+    top: 60px;
+    right: -100%;
+    width: 200px;
+    padding: 16px;
+  }
+
+  .links,
+  .contact {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}
+
 

@@ -16,8 +16,10 @@ function Home() {
   if (loading) {
     return (
       <div className={styles.loadingContainer}>
-        <div className={styles.loadingSpinner}>Loading Home...</div>
-      </div>
+  <div className={styles.loadingSpinner}></div>
+  <div className={styles.loadingText}>Loading Home...</div>
+</div>
+
     );
   }
 
