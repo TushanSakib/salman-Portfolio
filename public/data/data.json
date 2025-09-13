@@ -1,0 +1,200 @@
+{
+  "experience": {
+    "title": "Work Experience",
+    "jobs": [
+      {
+        "role": "Sr. Project Coordinator",
+        "company": "BRAC IT Services",
+        "duration": "01/2025 - Present",
+        "location": "Gulshan-1",
+        "website": "https://bracits.com/",
+        "image": "/images/Consultant.png",
+        "responsibilities": [
+          "Spearheaded Payroll, Leave & Attendance module rollout for employees, ensuring zero data loss and smooth adoption.",
+          "Led system load tests handling up to 10,000 concurrent users for scalability and reliability.",
+          "Enhanced system accessibility by integrating Single Sign-On (SSO), improving user experience.",
+          "Established Post-Go-Live Support Framework, aligning practices for ongoing efficiency."
+        ]
+      },
+      {
+        "role": "Project Consultant",
+        "company": "Protech Solution Limited",
+        "duration": "11/2024 - Present",
+        "location": "Mohakhali (Remote)",
+        "website": "https://gettiko.com/",
+        "image": "/images/coordinator.png",
+        "responsibilities": [
+          "Advised on Hanif Enterprise Digital Challan System & Tiko B2B ERP, aligning solutions with business goals.",
+          "Reduced project turnaround time by 20% by optimizing coordination between 10+ teams and stakeholders.",
+          "Enhanced ERP visibility for transport clients, automating trip challans and reducing manual work.",
+          "Facilitated stakeholder communication to align expectations and improve satisfaction."
+        ]
+      },
+      {
+        "role": "Project Coordinator",
+        "company": "Jatri",
+        "duration": "09/2022 - 12/2024",
+        "location": "Gulshan-2",
+        "website": "https://jatri.co/",
+        "image": "/images/Consultant.png",
+        "responsibilities": [
+          "Managed public transport ticketing solutions serving 150M+ tickets and 10k+ daily users.",
+          "Improved project execution by 25% through better dependency management and risk mitigation.",
+          "Implemented workflow improvements reducing project timelines by 15%.",
+          "Led and mentored a team of 3 SQA engineers for 6 months.",
+          "Coordinated multiple projects with ClickUp, ensuring milestone alignment."
+        ]
+      },
+      {
+        "role": "Product Analyst",
+        "company": "Jatri",
+        "duration": "08/2021 - 09/2022",
+        "location": "Gulshan-2",
+        "website": "https://jatri.co/",
+        "image": "/images/Consultant.png",
+        "responsibilities": [
+          "Boosted user engagement by 40% through transport ticketing system improvements.",
+          "Conducted market research to guide product roadmap planning.",
+          "Collaborated with engineers to translate product requirements into technical specifications.",
+          "Supported agile processes including sprint planning and reviews."
+        ]
+      },
+      {
+        "role": "Assistant Network Engineer",
+        "company": "Amber IT",
+        "duration": "03/2020 - 02/2021",
+        "location": "Gulshan-1",
+        "website": "",
+        "image": "/images/Consultant.png",
+        "responsibilities": [
+          "Resolved 100% of escalated desktop and laptop network issues.",
+          "Maintained and managed inventory of over 5M network equipment items."
+        ]
+      }
+    ]
+  },
+  
+  "projects": {
+    "title": "Projects",
+    "list": [
+      {
+        "name": "eBenefits for BRAC",
+        "company": "BRAC",
+        "summary": "Implemented payroll system with Attendance, DPS, PF, Gratuity, Loan, Tax, and Salary Processing modules.",
+        "achievements": [
+          "Enhanced payroll efficiency by 25%.",
+          "Improved compliance accuracy by 30%.",
+          "Cut manual errors by 35% with automation."
+        ],
+        "tags": ["ERP", "Payroll", "Automation"]
+      },
+      {
+        "name": "Intercity B2B Service (Bus)",
+        "company": "Jatri.co",
+        "summary": "B2B bus ticketing platform for 5k+ users with real-time reporting.",
+        "achievements": [
+          "Boosted operational efficiency by 50%.",
+          "Generated 100% accurate revenue reports.",
+          "Added 50+ crores to monthly GMV."
+        ],
+        "tags": ["Transport", "Ticketing", "B2B"]
+      },
+      {
+        "name": "Water Transport B2B Service (Launch)",
+        "company": "Jatri.co",
+        "summary": "Launch/ferry ticketing system with online + offline capabilities.",
+        "achievements": [
+          "Boosted operational smoothness by 35% with offline deck app.",
+          "Improved efficiency by 45% with POS device integration."
+        ],
+        "tags": ["Transport", "Maritime", "Offline-first"]
+      },
+      {
+        "name": "Digital Ticketing",
+        "company": "Jatri.co",
+        "summary": "Multi-modal online bus & launch ticketing system.",
+        "achievements": [
+          "25% increase in adoption via seamless no-login purchases.",
+          "Improved booking efficiency by 30% with multi-modal login.",
+          "Improved stakeholder alignment by 20%."
+        ],
+        "tags": ["Digital Ticketing", "Multi-modal", "B2C"]
+      },
+      {
+        "name": "Digital Challan Management System",
+        "company": "Hanif Enterprise",
+        "summary": "Automated challans with centralized accounts for better financial efficiency.",
+        "achievements": [
+          "Increased efficiency by 20% with automated trip challans.",
+          "Improved transparency and audit compliance by 30%."
+        ],
+        "tags": ["ERP", "Transport", "Finance"]
+      },
+      {
+        "name": "Umrah Package Management System",
+        "company": "Saafir Global",
+        "summary": "Centralized Umrah package creation, booking, and financial operations system.",
+        "achievements": [
+          "Improved scalability and usability, benefiting 1k+ users.",
+          "Enhanced efficiency by 20% via process automation."
+        ],
+        "tags": ["Travel", "Umrah", "ERP"]
+      }
+    ]
+  },
+
+  "education": [
+    {
+      "degree": "Masters in Information Technology",
+      "university": "Jahangirnagar University",
+      "duration": "2018 - 2019",
+      "location": "Dhaka"
+    },
+    {
+      "degree": "Bachelor of Science in CSE",
+      "university": "Daffodil International University",
+      "duration": "2013 - 2017",
+      "location": "Dhaka"
+    }
+  ],
+
+  "certifications": [
+    {
+      "title": "Google Project Management: Professional Certificate",
+      "issuer": "Google"
+      
+    },
+    {
+    "title": "Project Management Foundation",
+      "issuer": "Linkedin Learning"
+    }
+  ],
+
+  "skills": {
+    "Project": [
+      "Project Plans",
+      "Analytical Skills",
+      "Timelines",
+      "Problem Solving",
+      "Requirements Gathering",
+      "Communication",
+      "Agile & Scrum",
+      "ClickUp",
+      "Jira",
+      "Go-Live Support Planning"
+    ],
+    "Product": [
+      "Business Requirements",
+      "Business Analysis",
+      "Business Process",
+      "Workable Solutions",
+      "Documentation",
+      "Test Analysis",
+      "Coordination",
+      "Stakeholder Management",
+      "UAT",
+      "Priority Management",
+      "Risk Management"
+    ]
+  }
+}

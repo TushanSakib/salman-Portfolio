@@ -1,0 +1,151 @@
+/* Container */
+.learningSection {
+  padding: 80px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+  scroll-behavior: smooth;
+}
+
+/* Section Titles */
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #10b981);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+/* ================== Skills ================== */
+.skillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.skillCategory {
+  flex: 1 1 300px;
+}
+
+.skillCategoryTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skillItem {
+  display: inline-block;
+  background: rgba(59, 130, 246, 0.2);
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.skillItem:hover {
+  background: #3b82f6;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ================== Education ================== */
+.educationGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.educationCard {
+  background: rgba(15, 23, 42, 0.85);
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  transition: all 0.3s ease;
+}
+
+.educationCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+}
+
+.degree {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.university {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #a1a1aa;
+  margin-bottom: 6px;
+}
+
+.duration,
+.location {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+/* ================== Certifications ================== */
+.certificationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.certCard {
+  background: rgba(15, 23, 42, 0.85);
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  transition: all 0.3s ease;
+}
+
+.certCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+}
+
+.certTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.issuer,
+.course,
+.platform {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  margin-bottom: 2px;
+}
+
+/* ================== Responsive ================== */
+@media (max-width: 768px) {
+  .skillsGrid {
+    flex-direction: column;
+  }
+
+  .educationGrid {
+    gap: 20px;
+  }
+
+  .certificationsGrid {
+    grid-template-columns: 1fr;
+  }
+}
