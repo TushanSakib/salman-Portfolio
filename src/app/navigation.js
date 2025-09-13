@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import { MdHome } from "react-icons/md";
@@ -12,19 +11,17 @@ function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
-
-  const handleClick = ()=> setMenuOpen(false)
+  const closeMenu = () => setMenuOpen(false);
 
   return (
-    <div className={styles.topNavigation}>
+    <nav className={styles.topNavigation}>
       {/* Left Navigation */}
       <div className={styles.leftNavigation}>
         <div className={styles.customLogo}>
           Salman <span>Azad</span>
         </div>
         <div className={styles.contact}>
-          <TiMessages />
-          contact@salmanazad.com
+          <TiMessages /> contact@salmanazad.com
         </div>
       </div>
 
@@ -33,24 +30,24 @@ function Navigation() {
         <GiHamburgerMenu />
       </div>
 
-      {/* Right Navigation Links */}
+      {/* Right Navigation */}
       <div
         className={`${styles.rightNavigation} ${menuOpen ? styles.active : ""}`}
       >
-        <Link href={"/"} className={styles.links} onClick={handleClick}>
+        <Link href="/" className={styles.links} onClick={closeMenu}>
           <MdHome /> Home
         </Link>
-        <Link href={"/experience"} className={styles.links} onClick={handleClick}>
+        <Link href="/experience" className={styles.links} onClick={closeMenu}>
           <FaChartLine /> Experience
         </Link>
-        <Link href={"/project"} className={styles.links} onClick={handleClick}>
+        <Link href="/project" className={styles.links} onClick={closeMenu}>
           <FaProjectDiagram /> Projects
         </Link>
-        <Link href={"/knowledge"} className={styles.links} onClick={handleClick}>
+        <Link href="/knowledge" className={styles.links} onClick={closeMenu}>
           <GiSkills /> Knowledge
         </Link>
       </div>
-    </div>
+    </nav>
   );
 }
 

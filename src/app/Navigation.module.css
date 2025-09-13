@@ -1,4 +1,4 @@
-/* Top Navigation Container */
+/* Top Navigation */
 .topNavigation {
   position: fixed;
   top: 0;
@@ -6,19 +6,17 @@
   width: 100%;
   height: 60px;
   display: flex;
-  justify-content: space-between; /* left items left, right items right */
-  align-items: center;
+  justify-content: space-between;
+  align-items: space-between;
   padding: 0 20px;
   background: rgba(15, 23, 42, 0.95);
   backdrop-filter: blur(15px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   z-index: 1000;
 }
 
-
-/* Left Navigation Items */
+/* Left Navigation */
 .leftNavigation {
   display: flex;
   align-items: center;
@@ -26,11 +24,19 @@
 }
 
 /* Logo */
-.logo {
-  font-size: 1.4rem;
+.customLogo {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  font-size: 1rem;
   color: #3b82f6;
-  white-space: nowrap;
+}
+
+.customLogo span {
+  color: #f8fafc;
+  background: #2563eb;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-left: 6px;
 }
 
 /* Contact Info */
@@ -39,16 +45,13 @@
   align-items: center;
   gap: 6px;
   font-weight: 500;
-  font-size: 0.85rem; /* smaller font */
-  font-family: 'Fira Code', monospace; /* fancy font */
+  font-size: 0.85rem;
   color: #94a3b8;
   padding: 4px 10px;
   border-radius: 8px;
   background: rgba(59, 130, 246, 0.1);
-  transition: all 0.3s ease;
-  white-space: nowrap;
-  position: relative;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .contact:hover {
@@ -56,53 +59,37 @@
   color: #3b82f6;
 }
 
-/* Small Animation Dot */
-.contact::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #3b82f6;
-  top: 50%;
-  right: -10px;
-  transform: translateY(-50%);
-  animation: pulse 1.5s infinite;
+/* Hamburger - fixed top right on mobile */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;          /* slightly bigger for better touch */
+  color: #f8fafc;
+  cursor: pointer;        /* <-- this is required */                 /* padding from right edge */
+  top: 50%;                    /* vertical center */
+  transform: translate(90%,20%);
+  padding-left: 70px;
+  z-index: 1100;
 }
 
-@keyframes pulse {
-  0%, 100% {
-    transform: translateY(-50%) scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(-50%) scale(1.3);
-    opacity: 0.6;
-  }
-}
-
-/* Right Navigation Items */
+/* Right Navigation */
 .rightNavigation {
   display: flex;
   align-items: center;
-  gap: 7px;
-  padding-right: 70px;
+  padding-right: 110px;
+  
 }
 
-/* Right links with fancy small font */
 .links {
   display: flex;
   align-items: center;
   gap: 6px;
   font-weight: 500;
-  font-size: 0.85rem; /* smaller font */
-  font-family: 'Fira Code', monospace; /* fancy font */
+  font-size: 0.85rem;
   color: #f8fafc;
   text-decoration: none;
   padding: 4px 10px;
   border-radius: 8px;
   transition: all 0.3s ease;
-  white-space: nowrap;
 }
 
 .links:hover {
@@ -110,120 +97,86 @@
   color: #3b82f6;
 }
 
-/* Icon Size Adjustments */
-.links svg,
-.contact svg {
-  font-size: 1rem;
-}
+/* ================= Responsive ================= */
 
-
-.customLogo {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 0.8rem;
-  color: #3b82f6; /* Brand blue accent for 'Salman' */
-  user-select: none;
-}
-
-.customLogo span {
-  color: #f8fafc; /* light text color for 'Azad' */
-  background: #2563eb; /* deep brand blue background */
-  padding: 2px 8px;
-  border-radius: 6px;
-  margin-left: 6px;
-  font-weight: 600;
-  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.4);
-  transition: background 0.3s ease;
-}
-
-.customLogo span:hover {
-  background: #3b82f6;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.5);
-  cursor: pointer;
-}
-
-
-
-/* Hamburger Menu */
-.hamburger {
-  display: none;
-  font-size: 1.8rem;
-  color: #f8fafc;
-  cursor: pointer;
-  z-index: 1100;
-}
-
-/* Responsive Mobile Layout */
+/* Mobile Devices */
 @media (max-width: 768px) {
-  .topNavigation {
-    flex-direction: column;
-    align-items: flex-start; /* stack items vertically */
-    gap: 10px;
-    padding: 10px 20px;
-  }
-
-  /* Hamburger appears under left nav, right-aligned */
   .hamburger {
     display: block;
-    align-self: flex-end; /* push to right corner */
-    margin-top: 5px;
   }
 
-  /* Right Navigation hidden by default */
   .rightNavigation {
     position: absolute;
-    top: calc(60px + 40px); /* below top nav + hamburger spacing */
-    right: 0;
-    width: 220px;
+    top: 60px;
+    right: -100%;
     flex-direction: column;
     background: rgba(15, 23, 42, 0.98);
-    border-radius: 0 8px 8px 0;
+    width: 200px;
     padding: 20px;
-    box-shadow: -2px 0 10px rgba(0,0,0,0.3);
-    transform: translateX(100%);
-    opacity: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius: 8px 0 0 8px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
   }
 
   .rightNavigation.active {
-    transform: translateX(0);
-    opacity: 1;
+    right: 0;
   }
 
   .links {
     width: 100%;
-    padding: 10px;
     justify-content: flex-start;
     font-size: 1rem;
+    padding: 10px 5px;
+  }
+  .topNavigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .customLogo{
+    font-size: 0.5 rem;
   }
 }
 
+/* Small Mobile Devices */
 @media (max-width: 480px){
-  .topNavigation{
+  .topNavigation {
     flex-direction: column;
     gap: 6px;    
-    position: relative; /* needed for hamburger positioning */
   }
 
-  .leftNavigation {
-    width: 100%;
-    justify-content: flex-start;
-    gap: 6px;
-    padding-left: 16px;
-  }
-
+  .leftNavigation,
   .rightNavigation {
-    top: 60px;
-    right: -100%;
-    width: 200px;
-    padding: 16px;
+    justify-content: center;
+    gap: 4px;
+    margin-left: 10px;
   }
 
   .links,
   .contact {
     font-size: 0.8rem;
-    padding: 6px 10px;
+    padding: 4px 8px;
   }
+  .topNavigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftNavigation{
+    padding-right: 30px;
+    margin-top: 15px;
+  }
+
+  .customLogo{
+    font-size: 15px
+
+  }
+
+  .contact{
+    font-size: 10px;
+  }
+
 }
-
-
