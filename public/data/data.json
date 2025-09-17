@@ -8,7 +8,7 @@
         "duration": "01/2025 - Present",
         "location": "Gulshan-1",
         "website": "https://bracits.com/",
-        "image": "/images/consultant.png",
+        "image": "/images/Consultant.png",
         "responsibilities": [
           "At BRAC IT Services, I play a key role in driving large-scale system implementations and ensuring seamless adoption across diverse user bases. My work includes leading the rollout of the Payroll Leave & Attendance module for over 1 million employees, managing secure data migration with zero data loss, and conducting system load testing for 2,000–10,000+ users to ensure scalability and reliability.",
           "I’ve also enhanced accessibility through Single Sign-On (SSO) integration and established a Post-Go-Live Support Framework that aligns project teams with long-term business objectives. By bridging clients, vendors, and internal teams, I ensure challenges in UAT are quickly resolved and that every project milestone delivers measurable value."
@@ -32,7 +32,7 @@
         "duration": "09/2022 - 12/2024",
         "location": "Gulshan-2",
         "website": "https://jatri.co/",
-        "image": "/images/consultant.png",
+        "image": "/images/Consultant.png",
         "responsibilities": [
           " At Jatri, I contributed to scaling public transport ticketing solutions that reached 10,000+ active users and facilitated the issuance of 150M+ tickets. I managed multiple projects simultaneously, driving efficiency improvements that cut project timelines by 15% and improved execution success rates by 25%.",
           "I also led a team of 3 SQA engineers for 6 months, where I focused on task delegation, mentoring, and performance evaluations. My work emphasized collaboration, risk mitigation, and ensuring project milestones were consistently met."
@@ -44,7 +44,7 @@
         "duration": "08/2021 - 09/2022",
         "location": "Gulshan-2",
         "website": "https://jatri.co/",
-        "image": "/images/consultant.png",
+        "image": "/images/Consultant.png",
         "responsibilities": [
           "In this role, I worked closely with product managers and engineers to shape the development of transportation ticketing systems. By conducting market research, analyzing trends, and participating in agile sprints, I supported B2B service enhancements that increased user engagement by 40%.",
           "I translated business needs into technical requirements, ensuring engineering teams had clear specifications and roadmaps to deliver impactful solutions."
@@ -56,7 +56,7 @@
         "duration": "03/2020 - 02/2021",
         "location": "Gulshan-1",
         "website": "",
-        "image": "/images/consultant.png",
+        "image": "/images/Consultant.png",
         "responsibilities": [
           "At Amber IT, I provided technical support for network troubleshooting and hardware management, resolving escalated customer issues with a 100% success rate. Additionally, I maintained and managed equipment inventory worth over 5 million BDT, ensuring operational reliability and resource optimization."
         ]
