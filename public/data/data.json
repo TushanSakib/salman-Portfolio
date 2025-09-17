@@ -8,26 +8,22 @@
         "duration": "01/2025 - Present",
         "location": "Gulshan-1",
         "website": "https://bracits.com/",
-        "image": "/images/Consultant.png",
+        "image": "/images/consultant.png",
         "responsibilities": [
-          "Spearheaded Payroll, Leave & Attendance module rollout for employees, ensuring zero data loss and smooth adoption.",
-          "Led system load tests handling up to 10,000 concurrent users for scalability and reliability.",
-          "Enhanced system accessibility by integrating Single Sign-On (SSO), improving user experience.",
-          "Established Post-Go-Live Support Framework, aligning practices for ongoing efficiency."
+          "At BRAC IT Services, I play a key role in driving large-scale system implementations and ensuring seamless adoption across diverse user bases. My work includes leading the rollout of the Payroll Leave & Attendance module for over 1 million employees, managing secure data migration with zero data loss, and conducting system load testing for 2,000–10,000+ users to ensure scalability and reliability.",
+          "I’ve also enhanced accessibility through Single Sign-On (SSO) integration and established a Post-Go-Live Support Framework that aligns project teams with long-term business objectives. By bridging clients, vendors, and internal teams, I ensure challenges in UAT are quickly resolved and that every project milestone delivers measurable value."
         ]
       },
       {
         "role": "Project Consultant",
         "company": "Protech Solution Limited",
-        "duration": "11/2024 - Present",
-        "location": "Mohakhali (Remote)",
+        "duration": "02/2025 - Present",
+        "location": "Remote, Mohakhali",
         "website": "https://gettiko.com/",
         "image": "/images/coordinator.png",
         "responsibilities": [
-          "Advised on Hanif Enterprise Digital Challan System & Tiko B2B ERP, aligning solutions with business goals.",
-          "Reduced project turnaround time by 20% by optimizing coordination between 10+ teams and stakeholders.",
-          "Enhanced ERP visibility for transport clients, automating trip challans and reducing manual work.",
-          "Facilitated stakeholder communication to align expectations and improve satisfaction."
+          " As a consultant, I’ve worked on digital transformation projects like the Hanif Enterprise Digital Challan Management System and the Tiko B2B ERP solution. My role involves aligning technical requirements with business goals, optimizing processes, and streamlining communications between clients, vendors, and internal teams.",
+          "Through structured planning and stakeholder coordination, I helped reduce project turnaround times by 20%, while contributing to improved ERP visibility and automation for the transport industry."
         ]
       },
       {
@@ -36,13 +32,10 @@
         "duration": "09/2022 - 12/2024",
         "location": "Gulshan-2",
         "website": "https://jatri.co/",
-        "image": "/images/Consultant.png",
+        "image": "/images/consultant.png",
         "responsibilities": [
-          "Managed public transport ticketing solutions serving 150M+ tickets and 10k+ daily users.",
-          "Improved project execution by 25% through better dependency management and risk mitigation.",
-          "Implemented workflow improvements reducing project timelines by 15%.",
-          "Led and mentored a team of 3 SQA engineers for 6 months.",
-          "Coordinated multiple projects with ClickUp, ensuring milestone alignment."
+          " At Jatri, I contributed to scaling public transport ticketing solutions that reached 10,000+ active users and facilitated the issuance of 150M+ tickets. I managed multiple projects simultaneously, driving efficiency improvements that cut project timelines by 15% and improved execution success rates by 25%.",
+          "I also led a team of 3 SQA engineers for 6 months, where I focused on task delegation, mentoring, and performance evaluations. My work emphasized collaboration, risk mitigation, and ensuring project milestones were consistently met."
         ]
       },
       {
@@ -51,12 +44,10 @@
         "duration": "08/2021 - 09/2022",
         "location": "Gulshan-2",
         "website": "https://jatri.co/",
-        "image": "/images/Consultant.png",
+        "image": "/images/consultant.png",
         "responsibilities": [
-          "Boosted user engagement by 40% through transport ticketing system improvements.",
-          "Conducted market research to guide product roadmap planning.",
-          "Collaborated with engineers to translate product requirements into technical specifications.",
-          "Supported agile processes including sprint planning and reviews."
+          "In this role, I worked closely with product managers and engineers to shape the development of transportation ticketing systems. By conducting market research, analyzing trends, and participating in agile sprints, I supported B2B service enhancements that increased user engagement by 40%.",
+          "I translated business needs into technical requirements, ensuring engineering teams had clear specifications and roadmaps to deliver impactful solutions."
         ]
       },
       {
@@ -65,10 +56,9 @@
         "duration": "03/2020 - 02/2021",
         "location": "Gulshan-1",
         "website": "",
-        "image": "/images/Consultant.png",
+        "image": "/images/consultant.png",
         "responsibilities": [
-          "Resolved 100% of escalated desktop and laptop network issues.",
-          "Maintained and managed inventory of over 5M network equipment items."
+          "At Amber IT, I provided technical support for network troubleshooting and hardware management, resolving escalated customer issues with a 100% success rate. Additionally, I maintained and managed equipment inventory worth over 5 million BDT, ensuring operational reliability and resource optimization."
         ]
       }
     ]

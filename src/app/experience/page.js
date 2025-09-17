@@ -40,7 +40,7 @@ function Experience() {
       <div className={styles.containerFullWidth}>
         <div className={styles.headerSection}>
           <h1 className={styles.title}>
-            <span className={styles.titleGradient}>Work Experience</span>
+            <span className={styles.titleGradient}>Professional Experience</span>
           </h1>
           <p className={styles.subtitle}>Journey through my professional career</p>
           <div className={styles.experienceStats}>
