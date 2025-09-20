@@ -148,4 +148,14 @@
   .certificationsGrid {
     grid-template-columns: 1fr;
   }
+
+  .certificationsSection h2{
+    font-size: 25px;
+  }
+  .skillsSection h2{
+font-size: 25px;
+  }
+  .educationSection h2{
+font-size: 25px;
+  }
 }
