@@ -82,16 +82,18 @@ export default function ProjectSection() {
 
                   {project.tags?.length > 0 && (
                     <div className={styles.projectTags}>
-                      {project.tags.map((tag, i) => (
+                      <div className={styles.projectTagsContainer}>
+                        {project.tags.map((tag, i) => (
                         <span key={i} className={styles.projectTag}>
                           {tag}
                         </span>
                       ))}
+                      </div>
+                      
+                      <span className={styles.clickIndicator}>➤</span>
                     </div>
                   )}
-
-                  {/* Click indicator */}
-                  <span className={styles.clickIndicator}>➤</span>
+                  
                 </div>
               ))}
             </div>

@@ -37,6 +37,18 @@
   padding: 2px 8px;
   border-radius: 6px;
   margin-left: 6px;
+   display: inline-block;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+
+}
+
+.customLogo span:hover{
+  background: #3b82f6;
+  color: #f8fafc;
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.5);
 }
 
 /* Contact Info */

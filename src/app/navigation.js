@@ -18,7 +18,7 @@ function Navigation() {
       {/* Left Navigation */}
       <div className={styles.leftNavigation}>
         <div className={styles.customLogo}>
-          Salman <span>Azad</span>
+          <span>Salman</span> Azad
         </div>
         <div className={styles.contact}>
           <TiMessages /> contact@salmanazad.com
